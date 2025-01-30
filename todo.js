@@ -17,7 +17,8 @@ function rendertodo() {
                     todoList.splice(${i},1);
                     saveToLocalStorage();
                     rendertodo();
-                ">Delete</button>
+                ">❌ <span></span>
+                </button>
             </p>`;
         toHtml += html;
     }

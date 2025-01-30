@@ -29,7 +29,7 @@ p {
 }
 
 input {
-    width: 100%; /* Full width for better usability */
+    width: 95%; /* Full width for better usability */
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
@@ -73,12 +73,12 @@ button:hover {
 
 .todo-del {
     background: #bf2514;
-    width:100px; /* Increased button size */
-    height: 40px; /* Increased button size */
+    width:50px; /* Increased button size */
+    height: 50px; /* Increased button size */
     border: none;
     color: white;
     font-size: 0.9rem;
-    border-radius: 20px;
+    border-radius: 50%;
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -124,7 +124,7 @@ button:hover {
     }
 
     .todo-del {
-        width: 55px;
+        width: 25px;
         height: 25px;
         font-size: 0.9rem;
     }
