@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 10px;
+    background-image: url(one.jpg);
+    background-size: cover;
+}
+
+.main-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90vw; /* Increased for mobile */
+    max-width: 400px; /* Prevents excessive width on large screens */
+    text-align: center;
+}
+
+
+p {
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+input {
+    width: 100%; /* Full width for better usability */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%; /* Full width for easier clicking on mobile */
+    margin-top: 5px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.js-todo-list {
+    margin-top: 15px;
+    text-align: left;
+}
+
+.showdiv {
+    font-size: 1rem;
+    font-weight: 300;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #e9ecef;
+    padding: 8px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.todo-del {
+    background: #bf2514;
+    width:100px; /* Increased button size */
+    height: 40px; /* Increased button size */
+    border: none;
+    color: white;
+    font-size: 0.9rem;
+    border-radius: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Stack text below button */
+    position: relative;
+}
+.todo-del span {
+    font-size: 0.7rem; /* Smaller text */
+    margin-top: 5px; /* Space between icon and text */
+    display: block;
+}
+.todo-del::after {
+    /* content: "Delete"; */
+     /* Text below the button */
+    font-size: 0.8rem;
+    color: white;
+    position: absolute;
+    bottom: -18px; /* Adjust spacing */
+    text-align: center;
+    width: 100%;
+}
+
+.todo-del:hover {
+    background-color: #7a150a;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .main-box {
+        width: 95vw;
+        padding: 15px;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    input {
+        font-size: 1rem;
+        padding: 8px;
+    }
+
+    .todo-del {
+        width: 55px;
+        height: 25px;
+        font-size: 0.9rem;
+    }
+
+    .todo-del span {
+        font-size: 0.6rem;
+        margin-top: 3px;
+    }
+}
