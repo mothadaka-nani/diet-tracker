@@ -1,1 +1,0 @@
-it is about doing todo list and remainder page, with javascript, html ,css
